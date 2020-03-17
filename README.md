@@ -1,3 +1,4 @@
-sudo apt-get install gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf
+# README.md
 
-aarch64-linux-gnu-gcc helloworld.c -o helloworld.arm
+### init environment
+`git clone --recursive -j8 --shallow-submodules git@github.com:louiscklaw/raspberry-pi-playlist.git`
