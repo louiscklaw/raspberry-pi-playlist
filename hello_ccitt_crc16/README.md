@@ -1,0 +1,1 @@
+https://github.com/CANopenNode/CANopenNode/blob/master/stack/crc16-ccitt.c
