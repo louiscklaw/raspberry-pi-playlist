@@ -1,0 +1,8 @@
+
+char test_on[6];
+test_on[0]=0x7e;
+test_on[1]=0x0c;
+test_on[2]=0x01;
+test_on[3]=0x55;
+test_on[4]=0x4c;
+test_on[5]=0x7f;

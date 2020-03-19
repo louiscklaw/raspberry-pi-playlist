@@ -13,5 +13,5 @@ def test_change_voltage_command():
   command_result = command_result.decode('utf-8')
   print(command_result)
 
-# test_command_without_parameters()
+test_command_without_parameters()
 test_change_voltage_command()
