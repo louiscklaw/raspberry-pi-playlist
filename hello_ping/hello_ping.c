@@ -5,7 +5,10 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <errno.h>
-#include <termios.h>
+// #include <termios.h>
+
+#include <time.h>
+
 
 int parameter_voltage;
 int parameter_current;
@@ -14,6 +17,21 @@ int ii=0;
 int test_int;
 // int hello_test[];
 
+void delay(int number_of_seconds)
+{
+    puts("starting delay\n");
+    // Converting time into milli_seconds
+    int milli_seconds = 1 * number_of_seconds;
+
+    // Storing start time
+    clock_t start_time = clock();
+
+    // looping till required time is not achieved
+    while (clock() < start_time + milli_seconds)
+        ;
+
+    puts("delay done\n");
+}
 
 int write_to_the_port(int fd, char * test_int){
   int n = write(fd, &test_int,1);
@@ -222,9 +240,25 @@ int ping_dps(void){
   }
   write_to_the_port(fd, command_end[0]);
 
+  printf("%02x", checksum_result);
+
+  delay(2000);
+
+  int n;
+  char buf[256];
+  n = read(fd, (void*)buf, 255);
+  if (n < 0) {
+    perror("Read failed - ");
+    return -1;
+  } else if (n == 0) printf("No data on port\n");
+  else {
+    buf[n] = '\0';
+    printf("%i bytes read : %s", n, buf);
+  }
+
   close(fd);
 
-  printf("%02x", checksum_result);
+
 
   puts("ping dps done");
   return EXIT_SUCCESS;
