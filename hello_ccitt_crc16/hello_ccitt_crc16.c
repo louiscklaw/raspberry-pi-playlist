@@ -64,9 +64,6 @@ int main(void) {
 	test_input[25] = 0x30;
 	test_input[26] = 0x0;
 
-
-
-
 	printf("%c\n", test_input[1]);
 
 	puts("!!!Hello World!!!");
