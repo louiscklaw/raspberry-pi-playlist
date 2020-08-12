@@ -1,0 +1,1 @@
+{Raspi1b-3b+Housing %!s(bool=true)} by {eisenfliege %!s(bool=true)} on Thingiverse: https://www.thingiverse.com/thing:4067018

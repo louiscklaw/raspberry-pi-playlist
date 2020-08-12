@@ -1,0 +1,1 @@
+{Case/Gehäuse Raspberry Pi 3 B or B+ & MeanWell RS-50-5 %!s(bool=true)} by {handymax %!s(bool=true)} on Thingiverse: https://www.thingiverse.com/thing:4081768
