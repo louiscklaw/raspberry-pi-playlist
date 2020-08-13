@@ -8,3 +8,6 @@ http://srecord.sourceforge.net/crc16-ccitt.html
 
 ### raspberry pi UART programming helloworld
 https://www.raspberrypi.org/forums/viewtopic.php?t=7500
+
+### update to add pi hats
+https://github.com/Seeed-Studio/pi-hats
