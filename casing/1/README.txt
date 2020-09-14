@@ -1,0 +1,1 @@
+{Raspberry PI 3b+ & 8 relay board enclosure %!s(bool=true)} by {Pjleavitt %!s(bool=true)} on Thingiverse: https://www.thingiverse.com/thing:4090176
