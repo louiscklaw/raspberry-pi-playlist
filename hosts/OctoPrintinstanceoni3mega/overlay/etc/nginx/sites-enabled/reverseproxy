@@ -64,5 +64,16 @@ server  {
         access_log /var/log/nginx/shellinabox.access.log;
         error_log /var/log/nginx/shellinabox.error.log;
     }
+
+    location /printer/ {
+        proxy_pass http://localhost:80;
+        auth_basic            "Access Restricted";
+        auth_basic_user_file  "/etc/nginx/.htpasswd";
+        access_log /var/log/nginx/shellinabox.access.log;
+        error_log /var/log/nginx/shellinabox.error.log;
+    }
+
+
+
 }
 
