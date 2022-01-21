@@ -9,7 +9,7 @@ server {
     rewrite - https://$host$request_uri? permanent;
 }
 
-# HTTPS 443
+# HTTPS 50443
 server  {
     listen 50443 ssl;
     keepalive_timeout 70;
@@ -65,3 +65,4 @@ server  {
         error_log /var/log/nginx/shellinabox.error.log;
     }
 }
+
